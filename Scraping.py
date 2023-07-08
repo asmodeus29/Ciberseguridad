@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-page = requests.get('https://easybox506.com/')
+page = requests.get('URL')
 soup = BeautifulSoup(page.txt, 'html.parser')
 
 blockquote_items = soup.find_all('blockqoute')
